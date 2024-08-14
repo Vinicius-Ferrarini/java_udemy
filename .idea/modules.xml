@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aula45/aula45.iml" filepath="$PROJECT_DIR$/aula45/aula45.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula55/aula55.iml" filepath="$PROJECT_DIR$/aula55/aula55.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula58 Operadores bitwise(compara bit)/aula58 Operadores bitwise(compara bit).iml" filepath="$PROJECT_DIR$/aula58 Operadores bitwise(compara bit)/aula58 Operadores bitwise(compara bit).iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula59/aula59.iml" filepath="$PROJECT_DIR$/aula59/aula59.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula61_funcoes/aula61_funcoes.iml" filepath="$PROJECT_DIR$/aula61_funcoes/aula61_funcoes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula64SemOrientacao/aula64SemOrientacao.iml" filepath="$PROJECT_DIR$/aula64SemOrientacao/aula64SemOrientacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java_udemy.iml" filepath="$PROJECT_DIR$/.idea/java_udemy.iml" />
+    </modules>
+  </component>
+</project>
