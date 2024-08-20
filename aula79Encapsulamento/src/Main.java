@@ -13,6 +13,8 @@ public class Main {
         System.out.print("Price: ");
         double price = sc.nextDouble();
         Product product = new Product(name,price);
+        product.setName("Test");
+        System.out.println("linha teste: " + product.getName());
 
         System.out.println(product+"\n");
 
