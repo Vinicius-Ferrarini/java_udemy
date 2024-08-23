@@ -11,7 +11,8 @@ public class Main {
         System.out.print("Enter account number: ");
         int tempConta = sc.nextInt();
         System.out.print("Enter account holder: ");
-        String tempName = sc.next();
+        sc.nextLine();
+        String tempName = sc.nextLine();
         System.out.println("Is there na initial deposit (y/n)? ");
         char vaiDepositar = sc.next().charAt(0);
         conta cliente = new conta(tempConta,tempName);
