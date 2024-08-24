@@ -11,10 +11,6 @@ public class conta {
         return numero;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
     public String getName() {
         return name;
     }
@@ -35,7 +31,7 @@ public class conta {
     public void depositar(double valor){
         if (valor <= 0){
             System.out.println("Valor igual o menor que ZERO!");
-        }else{
+        }else {
             this.valor += valor;
         }
     }
