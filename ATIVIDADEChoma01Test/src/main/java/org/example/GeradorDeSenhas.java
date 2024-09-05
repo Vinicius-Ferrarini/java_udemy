@@ -11,7 +11,10 @@ public class GeradorDeSenhas {
     private static SecureRandom random = new SecureRandom();
 
     public String gerarSenha(int tam,boolean letraMinuscula,boolean letraMausculas, boolean numeros,boolean simbolos){
-        String senha ="";
+        if(tam < 1){
+            return "";
+        }
+
         String possiveisCaracteres ="";
         if (letraMinuscula){
             possiveisCaracteres += LETRAS_MINUSCULAS;
@@ -25,11 +28,11 @@ public class GeradorDeSenhas {
         if (simbolos){
             possiveisCaracteres += SIMBOLOS;
         }
+        String senha ="";
         for (int i = 0;i < tam;i++){
             int index = random.nextInt(possiveisCaracteres.length());
             senha += possiveisCaracteres.charAt(index);
         }
-
 
         return senha;
     }
