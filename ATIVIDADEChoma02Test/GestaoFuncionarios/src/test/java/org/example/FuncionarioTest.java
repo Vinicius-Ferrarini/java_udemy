@@ -3,6 +3,7 @@ package org.example;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class FuncionarioTest {
 
     @Test
@@ -22,4 +23,6 @@ class FuncionarioTest {
         assertEquals("111.222.333-44", funcionario.getCpf());
         assertEquals(3200.0, funcionario.getSalarioBase(), 0.001);
     }
+
+
 }
