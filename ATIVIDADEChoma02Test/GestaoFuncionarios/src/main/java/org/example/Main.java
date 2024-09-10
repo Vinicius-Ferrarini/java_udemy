@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
         List<Funcionario> lista = new ArrayList<>();
@@ -18,7 +17,8 @@ public class Main {
             sc.nextLine();
             switch (opcao){
                 case 1:
-                    
+                    System.out.println("Digite o funcionario");
+                    sc.nextLine();
 
             }
 

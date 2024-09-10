@@ -27,7 +27,6 @@ public class Funcionario {
         System.out.println("Salario do funcionario:");
         double tempSalarioBase = sc.nextInt();
         sc.next();
-
         sc.close();
     }
 
