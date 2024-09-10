@@ -18,6 +18,19 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
+    void cadastrarFuncionario(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o nome do funcionario");
+        String tempNome = sc.nextLine();
+        System.out.println("Digite o cpf do funcionario:");
+        String tempCpf = sc.nextLine();
+        System.out.println("Salario do funcionario:");
+        double tempSalarioBase = sc.nextInt();
+        sc.next();
+
+        sc.close();
+    }
+
     public String getNome() {
         return nome;
     }
