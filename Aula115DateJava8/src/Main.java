@@ -11,7 +11,6 @@ public class Main {
         SimpleDateFormat sdf3 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         sdf3.setTimeZone(TimeZone.getTimeZone("GMT"));
 
-
         Date y1 = sdf1.parse("25/06/2018");
         Date y2 = sdf2.parse("25/06/2018 08:10:15");
         Date y3 = Date.from(Instant.parse("2018-06-25T15:42:07Z"));
