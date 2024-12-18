@@ -26,4 +26,6 @@ public class FuncionarioTempoIntegral extends Funcionario {
     public void exibirInformacoes() {
         System.out.printf("Funcionario tempo integral: %s,cpf: %s,salario Base: %f,Bonus: %f",getNome(),getCpf(),getSalarioBase(),bonus);
     }
+
+
 }
