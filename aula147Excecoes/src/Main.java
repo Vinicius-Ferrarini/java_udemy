@@ -4,6 +4,7 @@ import java.sql.SQLOutput;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -36,10 +37,15 @@ public class Main {
         catch (ParseException e){
             System.out.println("Data digitada Incorreta!");
         }
-        catch (IllegalArgumentException e){
+        catch (DomainExceptions e){
             System.out.println("Erro " + e.getMessage());
         }
-
+        catch (InputMismatchException e){
+            System.out.println("Deveria ter digitado um numero!!");
+        }
+        catch (RuntimeException e) {
+            System.out.println("Erro inexperado!");;
+        }
 
 
         sc.close();

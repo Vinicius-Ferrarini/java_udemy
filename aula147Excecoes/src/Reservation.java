@@ -9,6 +9,10 @@ public class Reservation {
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
+        if(!checkOut.after(checkIn)){
+            throw new DomainExceptions("Ckeck out é antes de ckech-in");
+        }
+
         this.roomNumber = roomNumber;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
@@ -35,13 +39,13 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff,TimeUnit.MILLISECONDS);
     }
 
-    public void updateDates(Date checkIn, Date checkOut){
+    public void updateDates(Date checkIn, Date checkOut) {
         Date now = new Date();
         if(checkIn.before(checkOut) || checkOut.before(now)){
-            throw new IllegalArgumentException("Reservation dater for updates future dates");
+            throw new DomainExceptions("Reservation dater for updates future dates");
         }
         if(!checkOut.after(checkIn)){
-            throw new IllegalArgumentException("Ckeck out é antes de ckech-in");
+            throw new DomainExceptions("Ckeck out é antes de ckech-in");
         }
 
         this.checkIn  = checkIn;
